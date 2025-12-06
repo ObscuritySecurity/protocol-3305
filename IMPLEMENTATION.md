@@ -17,20 +17,20 @@ This document provides technical guidance and recommended best practices for imp
 
 ### Art. 3: Zero Trust
 - **Authenticate Everything:** Every request between services, or between a client and a server, must be authenticated and authorized, even within a "trusted" network.
-- **Principle of Least Privilege:** Services and user sessions should only have access to the specific resources they absolutely need. A user's token should not grant access to another user's data.
+- **Principle of Least Privilege:** Sessions should only have access to the specific resources they absolutely need. A token for one person should not grant access to another person's data.
 - **Short-Lived Tokens:** Use short-lived access tokens (e.g., JWTs) that require frequent re-authentication for sensitive operations.
 
 ## Pillar II: Data Sovereignty
 
 ### Art. 4: Zero Knowledge
-- **Client-Side Encryption:** All encryption and decryption of user-generated content must occur on the client's device.
-- **Key Management:** The user's private keys must **never** be sent to or stored on your servers. Implement key derivation from a user-provided password (e.g., using Argon2) or have the user manage their keys directly.
-- **E2EE (End-to-End Encryption):** For communication apps, all messages, calls, and file transfers must be end-to-end encrypted. For storage apps, all data must be encrypted at rest with keys only the user holds.
+- **Client-Side Encryption:** All encryption and decryption of person-generated content must occur on the client's device.
+- **Key Management:** A person's private keys must **never** be sent to or stored on your servers. Implement key derivation from a password provided by the person (e.g., using Argon2) or have the person manage their keys directly.
+- **E2EE (End-to-End Encryption):** For communication apps, all messages, calls, and file transfers must be end-to-end encrypted. For storage apps, all data must be encrypted at rest with keys only the person holds.
 
 ### Art. 5: Zero Personal Data Collection
 - **Anonymous Registration:** If possible, do not require an email or phone number for registration. Use cryptographically generated identities.
 - **No Analytics SDKs:** Do not include third-party analytics SDKs (e.g., Google Analytics, Firebase Analytics, Mixpanel) in your client-side applications.
-- **Server-Side Anonymization:** If you require operational metrics (e.g., total number of active users), ensure they are aggregated and completely anonymous, with no link to any individual.
+- **Server-Side Anonymization:** If you require operational metrics (e.g., total number of active people), ensure they are aggregated and completely anonymous, with no link to any individual.
 
 ### Art. 6: Zero Activity Logs
 - **Disable Access Logs:** Configure your servers to not keep web server access logs (which contain IP addresses).
@@ -41,10 +41,10 @@ This document provides technical guidance and recommended best practices for imp
 
 ### Art.7: Open Source
 - **Public Repository:** The source code for all client-facing applications and a significant portion of the backend logic must be available in a public repository (e.g., on GitHub, GitLab).
-- **Reproducible Builds:** For advanced compliance, provide a way for users to verify that the distributed application was built from the public source code.
+- **Reproducible Builds:** For advanced compliance, provide a way for people to verify that the distributed application was built from the public source code.
 - **License:** Use a recognized open-source license (e.g., MIT, GPLv3, Apache 2.0).
 
 ### Art. 8: Zero Non-Essential Permissions
 - **Audit Permissions:** On mobile and desktop, regularly audit the permissions your application requests. For each permission, justify its necessity for a core feature.
-- **Graceful Degradation:** If a user denies a permission, the app should continue to function, perhaps with reduced capabilities. For example, a messaging app denied contact access should still allow users to add contacts manually.
+- **Graceful Degradation:** If a person denies a permission, the app should continue to function, perhaps with reduced capabilities. For example, a messaging app denied contact access should still allow people to add contacts manually.
 - **Transparency:** Clearly explain why a permission is needed at the moment it is requested.
