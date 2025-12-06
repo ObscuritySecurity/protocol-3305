@@ -11,7 +11,7 @@ In an era where personal data has become the most valuable commodity, a dangerou
 
 It provides a set of auditable, technically verifiable principles for any organization, developer, or collective that is committed to building software that respects and protects the person behind the screen. This is not a list of suggestions; it is a declaration of architectural and ethical commitments.
 
-Adherence to this protocol signifies that a service is structurally incapable of exploiting its users, because it is built on a foundation of zero-knowledge and zero-trust.
+Adherence to this protocol signifies that a service is structurally incapable of exploiting its People, because it is built on a foundation of zero-knowledge and zero-trust.
 
 ## Article 0: Ethical Monetization - A Pact Against Exploitation
 
