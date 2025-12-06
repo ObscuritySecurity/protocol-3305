@@ -74,10 +74,4 @@ Applications must only request permissions that are absolutely essential for the
 
 ## Adopting the Protocol
 
-To declare your project as compliant with Protocol 3305, you must ensure it adheres to all articles defined above. We encourage you to add the following badge to your project's README file.
-
-**Markdown:**
-```markdown
-[![Protocol 3305 Compliant](https://img.shields.io/badge/Protocol-3305-brightgreen.svg)](https://github.com/ObscuritySecurity/protocol-3305)
-```
-This signals to your community that you are committed to a higher standard of privacy and security.
+soon we will implement a validation system for organizations that are in confirmation with the protocol 3305
