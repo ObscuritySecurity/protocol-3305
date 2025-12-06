@@ -11,7 +11,14 @@ In an era where personal data has become the most valuable commodity, a dangerou
 
 It provides a set of auditable, technically verifiable principles for any organization, developer, or collective that is committed to building software that respects and protects the person behind the screen. This is not a list of suggestions; it is a declaration of architectural and ethical commitments.
 
-Adherence to this protocol signifies that a service is structurally incapable of exploiting its People, because it is built on a foundation of zero-knowledge and zero-trust.
+Adherence to this protocol signifies that a service is structurally incapable of exploiting its people, because it is built on a foundation of zero-knowledge and zero-trust.
+
+### Navigating This Repository
+
+- **[Implementation Guide](./IMPLEMENTATION.md):** For technical guidance on how to build compliant software.
+- **[Contribution Guide](./CONTRIBUTING.md):** For instructions on how to suggest improvements to the protocol.
+
+---
 
 ## Article 0: Ethical Monetization - A Pact Against Exploitation
 
@@ -45,7 +52,7 @@ All systems must operate under the premise "never trust, always verify." The arc
 This pillar establishes the person as the sole sovereign of their data. The service provider is a custodian of encrypted, unreadable data, not its owner.
 
 #### Art. 4: Zero Knowledge
-Compliant applications must be engineered so the service provider has zero knowledge of the content people create, store, or transmit. All user-generated content must be end-to-end encrypted, with decryption keys accessible only to the person, not the server.
+Compliant applications must be engineered so the service provider has zero knowledge of the content people create, store, or transmit. All person-generated content must be end-to-end encrypted, with decryption keys accessible only to the person, not the server.
 
 #### Art. 5: Zero Personal Data Collection
 No personally identifiable information (PII) shall be collected, logged, or stored for purposes other than the absolute functioning of the service (e.g., an account email). The system must be structurally unable to possess information that could profile or track a person.
