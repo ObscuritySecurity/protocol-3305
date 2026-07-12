@@ -65,7 +65,7 @@ This pillar ensures that all claims of security and privacy are not just promise
 #### Art. 7: Open Source
 Transparency builds trust. The source code of compliant applications must be open for public audit, allowing the global community of experts to verify, validate, and contribute to their security.
 
-#### Art. 8: Zero Non-Essential Permissions
+#### Art. 8: Least Privilege
 Applications must only request permissions that are absolutely essential for their core functionality. This principle of least privilege ensures no possibility of abuse through unnecessary access.
 
 ## Adopting the Protocol
